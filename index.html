@@ -96,15 +96,19 @@
                 </div>
                 <div class="modal-body">
                     <p class="alert alert-danger text-center p-2 animate__animated animate__shakeX animate__infinite" id="errorFirst">Please fill in the empty space</p>
-                    <div class="form-outline" data-mdb-input-init>
-                        <input type="text" class="form-control shadow-sm" id="firstitem" />
-                        <label class="form-label" for="form12">Add your item</label>
+                    <div class="form-outline my-2" data-mdb-input-init>
+                        <input type="number" class="form-control shadow-sm" id="newIndex" />
+                        <label class="form-label" for="form12">Which number are you editing?</label>
+                    </div>
+                    <div class="form-outline my-2" data-mdb-input-init>
+                        <input type="text" class="form-control shadow-sm" id="editedValue" />
+                        <label class="form-label" for="form12">Type the new value</label>
                     </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-mdb-ripple-init
                         data-mdb-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" data-mdb-ripple-init onclick="addFirst()">Save changes</button>
+                    <button type="button" class="btn btn-primary" data-mdb-ripple-init onclick="edit()">Save changes</button>
                 </div>
             </div>
         </div>

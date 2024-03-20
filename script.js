@@ -70,7 +70,19 @@ function addFirst() {
 }
 
 function edit() {
-    
+    if (newIndex.value === '' || editedValue.value === '') {
+        alert("fill something jor")
+    } else {
+        if((Number(newIndex.value)) > cart.length) {
+            alert("Haba, fear God now")
+        } else {
+            var indexNew = Number(document.getElementById('newIndex').value)
+            var replacement = document.getElementById('editedValue').value
+            console.log(indexNew, replacement);
+            cart.splice(indexNew-1, 1, replacement)
+            displayItem()
+        }
+    }
 }
 
 function displayItem() {
