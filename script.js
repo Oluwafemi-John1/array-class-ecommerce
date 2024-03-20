@@ -56,6 +56,23 @@ function delAny() {
     displayItem()
 }
 
+function addFirst() {
+    console.log(firstitem.value);
+    if (firstitem.value === '') {
+        errorFirst.style.display = 'block'
+    } else {
+        errorFirst.style.display = 'none'
+        cart.unshift(firstitem.value)
+        console.log(cart);
+        document.getElementById('firstitem').value = ''
+        displayItem()
+    }
+}
+
+function edit() {
+    
+}
+
 function displayItem() {
     show.innerHTML = ''
     // for (var i = 0; i < cart.length; i++) {

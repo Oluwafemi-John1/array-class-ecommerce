@@ -6,6 +6,6 @@ body {
     font-style: normal;
 }
 
-#bigDiv, #errorMsg, #bigShow {
+#bigDiv, #errorMsg, #bigShow, #errorFirst {
     display: none;
 }
