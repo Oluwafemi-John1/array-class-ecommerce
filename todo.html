@@ -20,7 +20,7 @@
             Please fill in the empty spaces</p>
         <div class="form-outline">
             <label class="form-label" for="todo">Add your todo:</label>
-            <input type="text" class="form-control shadow-sm" id="todo" />
+            <input type="text" class="form-control shadow-sm" id="todo" autofocus />
         </div>
         <button onclick="submitTodo()" class="btn btn-sm my-3 w-100 btn-primary">Submit</button>
     </div>
@@ -46,12 +46,12 @@
                 <div class="modal-body">
                     <div class="form-outline">
                         <label class="form-label" for="newTodo">Enter new value:</label>
-                        <input type="text" class="form-control shadow-sm" id="newTodo" />
+                        <input type="text" class="form-control shadow-sm" id="newTodo" autofocus />
                     </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" onclick="editItem()">Save changes</button>
+                    <button type="button" class="btn btn-primary" onclick="editItem()" data-bs-dismiss="modal">Save changes</button>
                 </div>
             </div>
         </div>
