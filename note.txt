@@ -1,0 +1,8 @@
+CRUD Operation
+C - Create
+R - Read
+U - Update
+D - Delete
+
+DRY
+Don't Repeat Yourself

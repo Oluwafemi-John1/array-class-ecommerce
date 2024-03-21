@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="jsStudents('Bolu',980,90000000,false)">Bolu</button>
+    <button onclick="jsStudents('Yode',1450,123000000,true)">Yode</button>
+    <button onclick="jsStudents('Bibi',1200,400000000,true)">Bibi</button>
+
+    <div id="show"></div>
+    <script>
+        function jsStudents(name, age, accBal, isTall) {
+            show.innerHTML += `My name is ${name} and my age is ${age}, while my account balance is ${accBal} and it is ${isTall} that I am tall`;
+        }
+    </script>
+</body>
+</html>
